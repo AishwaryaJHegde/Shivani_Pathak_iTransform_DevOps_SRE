@@ -1,0 +1,12 @@
+Create a simple script that does the following:
+
+Echo a full sentence to the terminal
+Echo a different full sentence, but redirect it to /dev/null
+
+Run and display the results and make sure the statements appear where intended.
+
+#!/bin/bash
+
+echo "I have created my first senetence"1>&2
+echo "Second sentence is used to redirect it to /dev/null" >> ~/dev/null
+echo "Assignment XCompleted"$(cap2>/dev/null)

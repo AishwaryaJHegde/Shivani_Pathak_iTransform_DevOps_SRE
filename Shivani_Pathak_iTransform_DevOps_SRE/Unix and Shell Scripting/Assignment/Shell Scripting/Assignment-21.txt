@@ -1,0 +1,16 @@
+Create a simple script containing a single function. 
+This function should display a message to clearly 
+indicate it was generated when the function was run. 
+Then, display another message outside the function 
+clearly indicating it was generated outside of it.
+
+#!/bin/bash
+
+func = "Printed message outside the function"
+function print_msg 
+{
+      func = "Printed message inside the function"
+}
+echo $func
+print_msg
+echo $func
